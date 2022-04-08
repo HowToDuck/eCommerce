@@ -163,7 +163,7 @@ footer p {
   width: 100%;
   max-width: 2000px;
   overflow: hidden;
-  background: url(images/coffee-large.jpg) no-repeat center;
+  background: url(images/Coffee-Display.jpg) no-repeat center;
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
@@ -192,12 +192,3 @@ footer p {
     height: 0;
   }
 }
-
-/* @media (max-width: 991px) {
-  .hero-image {
-    background: url(images/COFFEDISPLAY.jpg) no=repeat center;
-    background-size: cover;
-    overflow: hidden;
-    height: 500px;
-  }
-} */
