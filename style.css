@@ -18,7 +18,6 @@ header {
   border-bottom: 2px solid #c0b49c;
   margin-bottom: 15px;
 }
-
 img {
   height: 300px;
   width: 400px;
@@ -28,13 +27,19 @@ img {
   padding-top: 10px;
   border-radius: 25px;
 }
-.hero {
+/* .hero {
   height: 600px;
   width: 1200px;
   padding-bottom: 10px;
+} */
+.hero {
+  background-image: url(images/copy1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 600px;
 }
 button {
-  /* margin-left: 1em; */
+  margin-left: 0.5em;
   background-color: #547671;
   color: #fff;
   /* padding: 5px; */
@@ -45,24 +50,29 @@ h2,
 h3,
 p,
 .desc {
+  font-family: "Courier New", Courier, monospace;
   text-align: center;
   font-size: 15px;
+  /* margin: 5px; */
 }
-h2 {
-  font-family: "Courier New", Courier, monospace;
+h2,
+h3 {
   font-weight: bold;
   font-size: 22px;
   padding-top: 5px;
 }
 h3 {
-  font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   font-size: 22px;
   padding-top: 5px;
 }
 .desc {
-  font-family: "Courier New", Courier, monospace;
   font-size: 15px;
+  margin: 0;
+}
+p {
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .item {
@@ -71,10 +81,8 @@ h3 {
 }
 .col {
   background-color: #c0b49c;
-  /* padding: 5px; */
   margin: 5px;
   border-radius: 5px;
-  /* border: 5px solid black; */
 }
 footer {
   background-color: #c0b49c;
@@ -85,7 +93,6 @@ footer p {
 .socials li {
   display: inline-block;
   font-size: 2em;
-  padding-left: 10px;
   padding-right: 10px;
 }
 .socials a {
@@ -98,6 +105,9 @@ footer p {
 .about-list {
   columns: 2;
   list-style: none;
+}
+.about-list li {
+  padding-bottom: 10px;
 }
 .fa-li {
   /* background-color: purple; */
@@ -116,3 +126,78 @@ footer p {
   float: right;
   padding: 10px;
 }
+#logo {
+  height: 91px;
+  width: 348px;
+}
+
+@media (max-width: 991px) {
+  #home-hero {
+    /* background-size: auto; */
+    height: 400px;
+  }
+}
+
+@media (max-width: 800px) {
+  #home-hero {
+    /* background-size: auto; */
+    height: 300px;
+  }
+}
+@media (max-width: 600px) {
+  /* header {
+    background-image: none;
+  } */
+  #home-hero {
+    background-image: none;
+    height: 0;
+  }
+  /* #logo {
+    height: 75%;
+    width: 100%;
+  } */
+}
+.hero-image {
+  position: relative;
+  height: 700px;
+  width: 100%;
+  max-width: 2000px;
+  overflow: hidden;
+  background: url(images/coffee-large.jpg) no-repeat center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1600px) {
+  .hero-image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .hero-image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero-image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    background: none;
+    height: 0;
+  }
+}
+
+/* @media (max-width: 991px) {
+  .hero-image {
+    background: url(images/COFFEDISPLAY.jpg) no=repeat center;
+    background-size: cover;
+    overflow: hidden;
+    height: 500px;
+  }
+} */
